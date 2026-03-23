@@ -1,0 +1,5 @@
+{
+  "name": "EstateFlow CRM",
+  "description": "A professional real estate CRM dashboard visualizing live leads from Google Sheets with filtering and status management.",
+  "requestFramePermissions": []
+}
