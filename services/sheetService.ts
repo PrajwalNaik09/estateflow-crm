@@ -1,6 +1,7 @@
 import { Lead, LeadStatus, PropertyCategory } from '../types';
 
-const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1WIZDf107pz7GV2OwM9gh9XD6In26JnzFNqtjmTnL0F4/export?format=csv';
+// We use gviz/tq since it supports CORS natively, avoiding the need for proxy services in production
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1WIZDf107pz7GV2OwM9gh9XD6In26JnzFNqtjmTnL0F4/gviz/tq?tqx=out:csv';
 
 function parseCSV(text: string): string[][] {
   const rows: string[][] = [];
