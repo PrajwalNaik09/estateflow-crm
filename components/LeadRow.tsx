@@ -1,6 +1,5 @@
 import React from 'react';
 import { Lead, LeadStatus } from '../types';
-import LeadStatusBadge from './LeadStatusBadge';
 import { Phone, Mail, MapPin, Home, MoreVertical } from 'lucide-react';
 
 interface LeadRowProps {
@@ -56,7 +55,6 @@ const LeadRow: React.FC<LeadRowProps> = ({ lead, onUpdateStatus, onToggleContact
       <div className="col-span-12 md:col-span-7 flex flex-col space-y-3">
         <div className="flex items-center gap-3">
           <h3 className="text-lg font-bold text-slate-900">{lead.name}</h3>
-          <LeadStatusBadge status={lead.status} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8 text-sm text-slate-600">
